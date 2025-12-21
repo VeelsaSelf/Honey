@@ -58,7 +58,7 @@ const Footer = () => {
 
                     {/* Forever Message */}
                     <p className="mt-8 font-serif text-lg text-primary/80 italic">
-                        "Forever isn't long enough with you" ♥
+                        &ldquo;Forever isn&apos;t long enough with you&rdquo; ♥
                     </p>
                 </motion.div>
             </div>

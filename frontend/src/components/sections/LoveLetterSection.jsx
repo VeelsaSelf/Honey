@@ -42,6 +42,7 @@ const LoveLetterSection = () => {
             }, 25);
             return () => clearInterval(interval);
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isInView, letter, isEditing]);
 
     const handleSave = () => {

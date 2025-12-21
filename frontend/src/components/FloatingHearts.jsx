@@ -1,11 +1,11 @@
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useMemo } from "react";
 import { Heart } from "lucide-react";
 
 const FloatingHearts = () => {
-    const [hearts, setHearts] = useState([]);
+    const [tick, setTick] = useState(0);
 
-    const createHeart = useCallback(() => {
-        const id = Date.now() + Math.random();
+    const createHeart = useCallback((index) => {
+        const id = index + Math.random() * 1000;
         const left = Math.random() * 100;
         const size = Math.random() * 16 + 12;
         const duration = Math.random() * 8 + 10;
@@ -15,24 +15,24 @@ const FloatingHearts = () => {
         return { id, left, size, duration, delay, opacity };
     }, []);
 
-    useEffect(() => {
-        // Create initial hearts
-        const initialHearts = Array.from({ length: 8 }, createHeart);
-        setHearts(initialHearts);
+    // Create hearts based on tick value
+    const hearts = useMemo(() => {
+        const baseHearts = Array.from({ length: 8 }, (_, i) => createHeart(i));
+        const additionalHearts = Array.from(
+            { length: Math.min(tick, 4) }, 
+            (_, i) => createHeart(8 + i + tick * 100)
+        );
+        return [...baseHearts, ...additionalHearts];
+    }, [createHeart, tick]);
 
+    useEffect(() => {
         // Add new hearts periodically
         const interval = setInterval(() => {
-            setHearts((prev) => {
-                const filtered = prev.filter((h) => h.id > Date.now() - 18000);
-                if (filtered.length < 12) {
-                    return [...filtered, createHeart()];
-                }
-                return filtered;
-            });
-        }, 3000);
+            setTick((prev) => (prev + 1) % 5);
+        }, 4000);
 
         return () => clearInterval(interval);
-    }, [createHeart]);
+    }, []);
 
     return (
         <div className="floating-hearts">

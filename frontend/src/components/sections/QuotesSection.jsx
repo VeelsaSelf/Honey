@@ -126,7 +126,7 @@ const QuotesSection = () => {
                                     className="text-center px-4 md:px-12"
                                 >
                                     <p className="font-serif text-xl sm:text-2xl text-foreground leading-relaxed mb-6 italic">
-                                        "{loveQuotes[currentIndex].text}"
+                                        &ldquo;{loveQuotes[currentIndex].text}&rdquo;
                                     </p>
                                     <p className="text-primary font-medium flex items-center justify-center gap-2">
                                         <Heart className="w-4 h-4 fill-primary" />
