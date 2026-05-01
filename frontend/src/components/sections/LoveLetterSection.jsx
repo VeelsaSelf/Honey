@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 
-const defaultLetter = `My Dearest araa cutee,
+const defaultLetter = `My Dearest marshaa my fav person,
 
 Every day with you feels like a beautiful dream I never want to wake up from. Your smile lights up my world in ways words can never fully capture.
 
@@ -15,7 +15,7 @@ Thank you for being you — for your kindness, your laughter, your love. You mak
 This website is just a small token of the infinite love I have for you. I hope it brings a smile to your face and warmth to your heart, just as you bring to mine.
 
 Forever and always yours,
-Aldoo ♥`;
+LoopNexus ♥`;
 
 const LoveLetterSection = () => {
     const sectionRef = useRef(null);
