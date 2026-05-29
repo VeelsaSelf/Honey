@@ -29,7 +29,7 @@ const Footer = () => {
 
                     {/* Love Message */}
                     <h3 className="font-serif text-2xl sm:text-3xl font-semibold text-foreground mb-4">
-                        Made with Love for <span className="romantic-text-gradient">marshaa my fav person</span>
+                        Made with Love for <span className="romantic-text-gradient">nayaaa cutee my fav person</span>
                     </h3>
                     
                     <p className="text-muted-foreground mb-8 max-w-md mx-auto">

@@ -7286,11 +7286,7 @@ locate-path@^3.0.0:
 locate-path@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/locate-path/-/locate-path-5.0.0.tgz#1afba396afd676a6d42504d0a67a3a7eb9f62aa0"
-<<<<<<< HEAD
-  integrity sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjLoopNexusy6p9uGpQEGWG87WpMKlNq8g==
-=======
   integrity sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==
->>>>>>> 00b7e12e174616c8d6a8e0ba1b28734467c8a1a6
   dependencies:
     p-locate "^4.1.0"
 
