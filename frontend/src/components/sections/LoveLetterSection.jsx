@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 
-const defaultLetter = `My Dearest nayaaa cutee my fav person,
+const defaultLetter = `My Dearest cevaaa cutee my fav person,
 
 Every day with you feels like a beautiful dream I never want to wake up from. Your smile lights up my world in ways words can never fully capture.
 

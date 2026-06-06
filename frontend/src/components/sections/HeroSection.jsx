@@ -65,7 +65,7 @@ const HeroSection = () => {
                 >
                     For My Dearest
                     <br />
-                    <span className="romantic-text-gradient">nayaaa cutee my fav person</span>
+                    <span className="romantic-text-gradient">cevaaa cutee my fav person</span>
                 </motion.h1>
 
                 {/* Description */}
