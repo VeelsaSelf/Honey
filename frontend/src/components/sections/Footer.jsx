@@ -29,7 +29,7 @@ const Footer = () => {
 
                     {/* Love Message */}
                     <h3 className="font-serif text-2xl sm:text-3xl font-semibold text-foreground mb-4">
-                        Made with Love for <span className="romantic-text-gradient">cevaaa cutee my fav person</span>
+                        Made with Love for <span className="romantic-text-gradient">zilla cuteee my adek gweh</span>
                     </h3>
                     
                     <p className="text-muted-foreground mb-8 max-w-md mx-auto">
@@ -46,7 +46,7 @@ const Footer = () => {
 
                     {/* Attribution */}
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-sm text-muted-foreground">
-                        <span>Created by LoopNexus</span>
+                        <span>Created by Nexus</span>
                         <span className="hidden sm:inline">•</span>
                         <span className="flex items-center gap-1">
                             With infinite
